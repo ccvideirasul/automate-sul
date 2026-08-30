@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automate Sul — CCVideira Sul</title>
+<meta name="description" content="Automação interna da CCVideira Sul para envio de gravações de cultos ao Google Drive da igreja.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="folha">
+
+<header>
+  <p class="etiqueta">CCVideira Sul · Produção</p>
+  <h1>Automate Sul</h1>
+  <p class="resumo">Automação interna que envia as gravações dos cultos para o Google Drive da igreja.</p>
+</header>
+
+<main>
+
+<h2>O que é</h2>
+<p>O Automate Sul é um conjunto de rotinas usado pela equipe de produção da Comunidade Cristã Videira — Campus Sul, em Fortaleza, Ceará. Ele cuida de uma tarefa específica: pegar a gravação de um culto, separar o trecho da mensagem e enviá-lo ao Google Drive da igreja, onde a equipe de comunicação faz a edição final.</p>
+
+<p>Não é um produto, não está disponível para download e não tem usuários além da própria equipe. Roda em um único computador, dentro da igreja.</p>
+
+<h2>Como funciona</h2>
+<p>Depois de cada culto, a gravação é analisada para localizar onde a mensagem começa. O trecho é recortado e enviado ao Google Drive. Tudo acontece no computador da produção, sem servidor intermediário e sem que os arquivos passem por terceiros.</p>
+
+<p>O envio é feito pelo <a href="https://rclone.org" rel="noopener">rclone</a>, um utilitário de código aberto. A conexão com o Google Drive usa autorização OAuth concedida uma única vez pela conta da igreja.</p>
+
+<h2>Acesso ao Google Drive</h2>
+<p>A aplicação acessa apenas a conta do Google que autorizou explicitamente o acesso, e a usa somente para enviar arquivos de gravação. Não há leitura, coleta ou compartilhamento de dados de outras pessoas.</p>
+
+<div class="destaque">
+  <p>Detalhes sobre quais permissões são usadas e por quê estão na <a href="privacidade.html">Política de Privacidade</a>.</p>
+</div>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre esta aplicação podem ser enviadas para <a href="mailto:SEU-EMAIL-AQUI">SEU-EMAIL-AQUI</a>.</p>
+
+</main>
+
+<footer>
+  <p><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+  <p>Comunidade Cristã Videira — Campus Sul · Fortaleza, CE</p>
+</footer>
+
+</div>
+</body>
+</html>

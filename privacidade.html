@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Automate Sul</title>
+<meta name="description" content="Política de Privacidade do Automate Sul, automação interna da CCVideira Sul.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="folha">
+
+<header>
+  <p class="etiqueta">Automate Sul · Atualizada em 30 de agosto de 2026</p>
+  <h1>Política de Privacidade</h1>
+  <p class="resumo">O que a aplicação acessa, para quê, e o que ela não faz.</p>
+</header>
+
+<main>
+
+<h2>Resumo</h2>
+<p>O Automate Sul é uma automação interna da Comunidade Cristã Videira — Campus Sul. Ele acessa o Google Drive de uma única conta, a da própria igreja, para enviar gravações de cultos. Não coleta dados de visitantes, não usa cookies, não tem servidor e não compartilha nada com terceiros.</p>
+
+<h2>Quem opera a aplicação</h2>
+<p>A equipe de produção da Comunidade Cristã Videira — Campus Sul, em Fortaleza, Ceará. A aplicação roda em um computador da igreja e não está disponível ao público.</p>
+
+<h2>Quais dados são acessados</h2>
+<p>Apenas os arquivos de vídeo das gravações de cultos, produzidos pela própria equipe, e a pasta do Google Drive para onde eles são enviados.</p>
+
+<p>A autorização de acesso ao Google Drive é concedida uma única vez, pela conta da igreja, por meio do fluxo OAuth do Google. O identificador de autorização resultante fica armazenado apenas no computador onde a aplicação roda.</p>
+
+<h2>Permissões solicitadas</h2>
+<p>A aplicação solicita os seguintes escopos da API do Google Drive:</p>
+
+<ul class="permissoes">
+  <li>
+    <code>drive</code>
+    <span>Necessário para criar e enviar arquivos na pasta de destino dentro do Drive da igreja.</span>
+  </li>
+  <li>
+    <code>docs</code>
+    <span>Exigido pela biblioteca utilizada no envio. Nenhum documento é criado, lido ou alterado pela aplicação.</span>
+  </li>
+  <li>
+    <code>drive.metadata.readonly</code>
+    <span>Permite conferir nome e tamanho dos arquivos já enviados, para verificar se a transferência foi concluída antes de remover a cópia local.</span>
+  </li>
+</ul>
+
+<h2>Como os dados são usados</h2>
+<p>Os arquivos de gravação são enviados ao Google Drive da igreja e removidos do computador local após a confirmação de que a transferência foi concluída. É o único uso.</p>
+
+<p>Nenhum dado é enviado para outro destino, analisado por serviços externos, usado para publicidade ou repassado a qualquer terceiro.</p>
+
+<h2>Retenção</h2>
+<p>As gravações ficam no Google Drive da igreja, sob controle exclusivo dela, pelo tempo que a própria igreja determinar. A aplicação não mantém cópia própria nem histórico dos arquivos enviados.</p>
+
+<h2>Segurança</h2>
+<p>A transferência para o Google Drive é feita por conexão criptografada. A credencial de autorização fica no computador da produção, com acesso restrito à equipe.</p>
+
+<h2>Como revogar o acesso</h2>
+<p>A qualquer momento, a conta que concedeu a autorização pode removê-la em <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. A partir disso, a aplicação deixa imediatamente de conseguir acessar o Google Drive.</p>
+
+<h2>Este site</h2>
+<p>Estas páginas são estáticas e existem apenas para atender aos requisitos de configuração da Google Auth Platform. Não há formulários, cookies, rastreadores ou coleta de qualquer informação de quem as visita.</p>
+
+<h2>Alterações</h2>
+<p>Mudanças nesta política serão publicadas nesta mesma página, com a data de atualização revisada no topo.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre esta política podem ser enviadas para <a href="mailto:SEU-EMAIL-AQUI">SEU-EMAIL-AQUI</a>.</p>
+
+</main>
+
+<footer>
+  <p><a href="index.html">Início</a> · <a href="termos.html">Termos de Uso</a></p>
+  <p>Comunidade Cristã Videira — Campus Sul · Fortaleza, CE</p>
+</footer>
+
+</div>
+</body>
+</html>

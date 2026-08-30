@@ -1,0 +1,136 @@
+/* Automate Sul — CCVideira Sul
+   Folha de estilo compartilhada pelas três páginas. */
+
+:root {
+  --tinta:        #16181c;
+  --tinta-suave:  #4a4f57;
+  --papel:        #fbfaf8;
+  --linha:        #e2ded7;
+  --realce:       #1f4d3f;
+  --realce-claro: #eef3f0;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 24px 96px;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.folha { max-width: 640px; margin: 0 auto; }
+
+/* --- Cabeçalho --- */
+
+header {
+  padding: 72px 0 40px;
+  border-bottom: 1px solid var(--linha);
+  margin-bottom: 40px;
+}
+
+.etiqueta {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--realce);
+  margin: 0 0 14px;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0 0 12px;
+}
+
+.resumo {
+  font-size: 18px;
+  color: var(--tinta-suave);
+  margin: 0;
+}
+
+/* --- Corpo --- */
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 44px 0 12px;
+}
+
+h2:first-of-type { margin-top: 0; }
+
+p { margin: 0 0 16px; }
+
+ul { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+
+a {
+  color: var(--realce);
+  text-underline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--realce);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+  font-size: 0.86em;
+  background: var(--realce-claro);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.destaque {
+  background: var(--realce-claro);
+  border-left: 3px solid var(--realce);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.destaque p:last-child { margin-bottom: 0; }
+
+/* --- Lista de permissões --- */
+
+.permissoes { list-style: none; padding: 0; margin: 0 0 16px; }
+
+.permissoes li {
+  border-top: 1px solid var(--linha);
+  padding: 14px 0;
+  margin: 0;
+}
+
+.permissoes li:last-child { border-bottom: 1px solid var(--linha); }
+
+.permissoes code { display: inline-block; margin-bottom: 6px; }
+
+.permissoes span { display: block; color: var(--tinta-suave); font-size: 16px; }
+
+/* --- Rodapé --- */
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--linha);
+  font-size: 15px;
+  color: var(--tinta-suave);
+}
+
+footer p { margin: 0 0 8px; }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; padding: 0 20px 64px; }
+  header { padding-top: 48px; }
+  h1 { font-size: 27px; }
+}
